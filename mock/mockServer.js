@@ -4,13 +4,13 @@ const swipes =
   code: 200,
   data: [
     {
-      imgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556531040198&di=c6dabc6bb5c6524f9b77ceded00d1fce&imgtype=0&src=http%3A%2F%2Fi3.hexun.com%2F2019-04-28%2F196992413.jpg"
+      imgUrl:"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.kanzhun.com%2Fimages%2Fseo%2Fmianshiti%2F20191126%2Fc9140a2d7c1ce1e340854ba065450568.jpg&refer=http%3A%2F%2Fimg.kanzhun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621406639&t=7a4464962f1ff69184c73549e6167ddb"
     },
     {
-      imgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556531040180&di=0feae9ec159834591880d72c34137235&imgtype=0&src=http%3A%2F%2Fm1080.com%2Fupimg%2Fzyzp1%2F145186.jpg"
+      imgUrl:"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F7Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F37d3d539b6003af31d5ddb66362ac65c1138b6d4.jpg&refer=http%3A%2F%2Fgss0.baidu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621413852&t=fba38d6249d5343781b2d87e5e585e19"
     },
     {
-      imgUrl:"https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556531040164&di=b228224bb92c8baa6fbfa1ac6d31398c&imgtype=0&src=http%3A%2F%2Fimg.smzy.com%2Fimges%2F2017%2F0510%2F20170510101016609.jpg"
+      imgUrl:"https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fgss0.baidu.com%2F7Po3dSag_xI4khGko9WTAnF6hhy%2Fzhidao%2Fpic%2Fitem%2F37d3d539b6003af31d5ddb66362ac65c1138b6d4.jpg&refer=http%3A%2F%2Fgss0.baidu.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1621413852&t=fba38d6249d5343781b2d87e5e585e19"
     }
   ]
 };
