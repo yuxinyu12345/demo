@@ -53,6 +53,7 @@ export default {
         this.isLoadStart = true;
         document.removeEventListener("scroll", this.checkLazyLoad);
       }
+      
     },
     addScrollListener() {
       // 这个监听是有三个参数，第三个具体是干嘛的
