@@ -51,10 +51,138 @@ const patients =[
     imgUrl:'../../static/images/20170622131955_h4eZS.thumb.700_0.jpeg'
   }
 ];
+
+const tableData = [
+  {
+    id: 1,
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },{
+    date: '2016-05-03',
+    name: '王小虎',test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+  {
+    date: '2016-05-03',
+    name: '王小虎',
+    test1: 'test',
+    test2: 'test',
+    test3: 'test',
+    test4: 'test',
+    test5: 'test',
+    address: '上海市普陀区金沙江路 1518 弄'
+  },
+]
+
+const tableData1 = Mock.mock({
+  "array|1-10": [
+    {
+      id: 1,
+      date: '2016-05-03',
+      name: '王小虎',
+      test1: 'test',
+      test2: 'test',
+      test3: 'test',
+      test4: 'test',
+      test5: 'test',
+      address: '上海市普陀区金沙江路 1518 弄'
+    }
+  ]
+})
+
+
 Mock.mock('/swipes',swipes);
 Mock.mock('/patients',patients);
+Mock.mock('/tableData',tableData);
 Mock.mock("/patient", "post", (options)=>{
+  // 这个是干什么的？
+  console.log(options);
   const jsonObj = eval('(' + options.body + ')');
+  console.log(jsonObj);
   const patient = patients.filter(p=>p.id == jsonObj.pid);
   return patient[0];
+});
+
+Mock.mock('/deletTableData','delete',(options)=> {
+  
 });
