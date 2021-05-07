@@ -42,6 +42,7 @@
 <script>
 // @ is an alias to /src
 import HelloWorld from "@/components/HelloWorld.vue";
+import { fetchList } from "@/api/expressRes";
 import { reqSwipes, reqPatientByPid } from "@/api/mockDemo";
 export default {
   name: "Home",
@@ -95,10 +96,14 @@ export default {
     this.getSwipes();
     this.addScrollListener();
     this.getStringColorReplace();
-    reqPatientByPid(1);
+    this.getExpress()
   },
   watch: {},
   methods: {
+    async getExpress() {
+      const res = await fetchList()
+      console.log(res);
+    },
     change() {
       console.log(typeof this.xin);
       this.html = `<p style='color:red;'>${this.xin}</p>`

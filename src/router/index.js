@@ -35,7 +35,12 @@ const routes = [
     path: '/dynAddForm',
     name: 'DynAddForm',
     component: () => import('../views/DynAddForm.vue')
-  }
+  },
+  {
+    path: '/MemoryLeak',
+    name: 'MemoryLeak',
+    component: () => import('../views/MemoryLeak.vue')
+  },
 ]
 
 const router = new VueRouter({
