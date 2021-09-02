@@ -11,6 +11,7 @@ Vue.config.productionTip = false
 // elementui
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
+
 Vue.use(ElementUI)
 
 new Vue({

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    canvas {
+      display: block;
+      margin: auto;
+      /* border: solid 1px #ccc; */
+    }
+  </style>
+</head>
+
+<body>
+  <canvas width="600px" height="600px" id="canvas"></canvas>
+  <script>
+    const canvas = document.querySelector('#canvas')
+    const ctx = canvas.getContext('2d')
+
+    // 披风外
+    lineGradient(ctx, 70, 20, 164, 267, '#dcc0b5', '#e3c2bd', '#e0beb2', '#e7c7bc');
+    ctx.beginPath()
+    ctx.moveTo(70, 20)
+    ctx.lineTo(430, 20)
+    ctx.quadraticCurveTo(500, 130, 470, 140);
+    ctx.moveTo(420, 70)
+    ctx.quadraticCurveTo(570,300,480,320);
+    
+    ctx.lineTo(380, 360)
+    ctx.moveTo(440, 335)
+    ctx.lineTo(400, 430)   
+    
+    ctx.lineTo(410, 480)
+    ctx.fill()
+    // ctx.moveTo(425, 370)
+    // ctx.lineTo(490, 520)
+    // ctx.fill()
+    // ctx.lineTo(0, 520)
+    // ctx.lineTo(50, 460)
+    // ctx.quadraticCurveTo(40,450,60,320);
+    // ctx.quadraticCurveTo(10,270,15,210);
+    // ctx.quadraticCurveTo(20,130,70,20);
+    // ctx.fill()
+   /*  ctx.moveTo(57, 340)
+    ctx.lineTo(80, 380)
+    ctx.moveTo(75, 400)
+    ctx.lineTo(90, 470)
+    ctx.moveTo(88, 480)
+    ctx.lineTo(100, 500)
+    ctx.moveTo(55, 455)
+    ctx.lineTo(60, 445)
+    ctx.moveTo(285, 20)
+    ctx.lineTo(310, 120)
+    ctx.moveTo(285, 20)
+    ctx.moveTo(460, 470)
+    ctx.quadraticCurveTo(465,510,450,515); */
+    ctx.stroke()
+
+    /* // 披风内
+    ctx.beginPath()
+    ctx.moveTo(210, 35)
+    ctx.quadraticCurveTo(195,55,180,100);
+    ctx.quadraticCurveTo(30,250,130,500);//这个是披风的幅度很大的那条
+    ctx.lineTo(110, 520)
+    ctx.moveTo(210, 35)
+    ctx.quadraticCurveTo(240,60,270,135);
+    ctx.quadraticCurveTo(390,250,400,270);
+    ctx.quadraticCurveTo(410,290,330,430);
+    ctx.quadraticCurveTo(320,450,350,520);
+    ctx.stroke()
+
+    // 头发
+    ctx.beginPath()
+    ctx.moveTo(210, 35)
+    ctx.quadraticCurveTo(200,35,220,160);
+    ctx.quadraticCurveTo(220,110,218,60);
+
+    ctx.moveTo(210, 35)
+    ctx.quadraticCurveTo(200,35,220,160);
+    ctx.quadraticCurveTo(220,110,218,60);
+    ctx.quadraticCurveTo(220,180,260,220);
+    ctx.quadraticCurveTo(270,130,260,110)
+    ctx.moveTo(210, 80)
+    ctx.quadraticCurveTo(170,190,190,220)
+    ctx.quadraticCurveTo(175,200,180,170)
+    ctx.quadraticCurveTo(170,195,160,215)
+    ctx.lineTo(150, 135)
+    ctx.moveTo(130, 165)
+    ctx.quadraticCurveTo(120,200,125,250)
+    ctx.quadraticCurveTo(110,220,112,200)
+    ctx.moveTo(100, 235)
+    ctx.quadraticCurveTo(110,420,180,520)
+    ctx.moveTo(290, 155)
+    ctx.quadraticCurveTo(290,210,270,240)
+    ctx.quadraticCurveTo(285,180,280,145)
+    // ctx.lineTo(280, 145)
+    ctx.stroke() */
+
+
+    function lineGradient(ctx, x1, y1, x2, y2, color1, color2, color3, color4) {
+      var lineGradient11 = ctx.createLinearGradient(x1, y1, x2, y2);
+      lineGradient11.addColorStop(0, color1);
+      lineGradient11.addColorStop(0.4, color2);
+      lineGradient11.addColorStop(0.8, color3);
+      lineGradient11.addColorStop(1, color4);
+      ctx.fillStyle = lineGradient11;
+      ctx.beginPath();
+    }
+  </script>
+</body>
+
+</html>

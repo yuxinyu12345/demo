@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <!-- <router-link to="/about">About</router-link> -->
     <router-view />
   </div>
 </template>
@@ -7,12 +8,16 @@
 <script>
 export default {
   computed: {},
- /*  mounted() {
+  data() {
+    return {
+      data: '2'
+    }
+  },
+  mounted() {
     this.preload()
-  }, */
+  },
   methods: {
     async toAbout() {
-      
     },
     async preload() {
       let count = 0;
@@ -24,18 +29,12 @@ export default {
       // ];
       await this.$store.dispatch("lazyImg/setImgList");
       imgs = this.$store.state.lazyImg.imgList
-      console.log(imgs)
       for (let img of imgs) {
         let image = new Image();
         image.src = img.imgUrl;
         let that = this;
         image.onload = () => {
           count++;
-          if (count === imgs.length) {
-            that.$router.push({
-              name: "About",
-            });
-          }
         };
       }
     },

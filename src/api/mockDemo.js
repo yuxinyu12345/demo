@@ -15,3 +15,5 @@ export const reqPatientByPid = (pid)=>request(`/patient`,{pid},"POST");
 
 //4、获取所有table信息列表
 export const reqTableData = ()=>request(`/tableData`);
+
+export const reqTableData1 = ()=>request(`/tableData`);

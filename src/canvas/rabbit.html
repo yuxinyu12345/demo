@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    canvas {
+      display: block;
+      margin: auto;
+      border: solid 1px #ccc;
+    }
+  </style>
+</head>
+<body>
+  <canvas width="500px" height="500px" id="canvas"></canvas>
+  <script>
+    const canvas = document.querySelector('#canvas')
+    const ctx = canvas.getContext('2d')
+
+
+    // 耳朵
+    ctx.beginPath()
+    ctx.moveTo(190,300)
+    // ctx.lineTo(20,300)
+    ctx.quadraticCurveTo(180, 285, 120, 280);
+    ctx.quadraticCurveTo(180, 315, 190, 300);
+    ctx.quadraticCurveTo(210, 305, 224, 300);
+    ctx.quadraticCurveTo(255, 200, 252, 300);
+    ctx.stroke();
+
+  </script>
+</body>
+</html>

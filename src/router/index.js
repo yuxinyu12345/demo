@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import Vmodel from '../views/AsnyComponent/index.vue'
 
 Vue.use(VueRouter)
 
@@ -8,7 +9,7 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Vmodel
   },
   {
     path: '/about',
@@ -40,6 +41,11 @@ const routes = [
     path: '/MemoryLeak',
     name: 'MemoryLeak',
     component: () => import('../views/MemoryLeak.vue')
+  },
+  {
+    path: '/bigimg',
+    name: 'bigimg',
+    component: () => import('../views/BigImg/index.vue')
   },
 ]
 
