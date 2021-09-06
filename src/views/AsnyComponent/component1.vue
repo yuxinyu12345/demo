@@ -6,7 +6,7 @@
 
 <script>
 export default {
-  name: 'component1',
+  name: 'component3',
   updated() {
     console.log('son --- updated2')
   },
