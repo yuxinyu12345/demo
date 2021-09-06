@@ -6,7 +6,10 @@
 
 <script>
 export default {
-  name: 'component',
+  name: 'component1',
+  updated() {
+    console.log('son --- updated')
+  },
 }
 </script>
 
