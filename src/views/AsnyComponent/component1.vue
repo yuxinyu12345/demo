@@ -8,7 +8,7 @@
 export default {
   name: 'component1',
   updated() {
-    console.log('son --- updated')
+    console.log('son --- updated2')
   },
 }
 </script>
