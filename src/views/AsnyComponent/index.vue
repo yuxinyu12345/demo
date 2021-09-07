@@ -13,6 +13,7 @@ export default {
     'component1': () => import('./component1.vue')
   },
   updated() {
+    console.log('master --- commit')
     console.log('father --- updated')
   },
   data() {
