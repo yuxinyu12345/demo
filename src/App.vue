@@ -12,7 +12,7 @@ export default {
     return {
       data: '2'
     }
-  },
+    },
   mounted() {
     this.preload()
   },
