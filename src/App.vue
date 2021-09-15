@@ -8,7 +8,7 @@
 <script>
 export default {
   computed: {},
-  data() {
+    data() {
     return {
       data: '2'
     }
