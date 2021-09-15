@@ -33,7 +33,7 @@ export default {
         let image = new Image();
         image.src = img.imgUrl;
         let that = this;
-        image.onload = () => {
+          image.onload = () => {
           count++;
         };
       }
