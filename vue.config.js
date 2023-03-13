@@ -4,6 +4,9 @@ const TerserPlugin = require("terser-webpack-plugin");
 console.log(CopyPlugin);
 
 module.exports = {
+  configureWebpack: {
+    plugins: [require('unplugin-vue-define-options/webpack')()],
+  },
   chainWebpack(config) {
     /* config
       .plugin('html')
